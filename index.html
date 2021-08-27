@@ -304,5 +304,30 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
+			
+			<script type="module"> // Firebase
+			  // Import the functions you need from the SDKs you need
+			  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js";
+			  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.0.0/firebase-analytics.js";
+			  // TODO: Add SDKs for Firebase products that you want to use
+			  // https://firebase.google.com/docs/web/setup#available-libraries
+
+			  // Your web app's Firebase configuration
+			  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+			  const firebaseConfig = {
+			    apiKey: "AIzaSyDeZjSSPedAL27hMbV6MpHQm-vjkKiYYpc",
+			    authDomain: "taipeifoodmap.firebaseapp.com",
+			    projectId: "taipeifoodmap",
+			    storageBucket: "taipeifoodmap.appspot.com",
+			    messagingSenderId: "175068878133",
+			    appId: "1:175068878133:web:4c07ac2146fedf40d0287c",
+			    measurementId: "G-XRW08BCXHT"
+			  };
+
+			  // Initialize Firebase
+			  const app = initializeApp(firebaseConfig);
+			  const analytics = getAnalytics(app);
+			</script>
+
 	</body>
 </html>
