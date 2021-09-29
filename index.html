@@ -11,7 +11,17 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1234567890123456" crossorigin="anonymous"></script>
+		<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+    <script>
+      window.googletag = window.googletag || {cmd: []};
+      googletag.cmd.push(function() {
+        googletag
+            .defineSlot(
+                '/6355419/Travel/Europe/France/Paris', [300, 250], 'banner-ad')
+            .addService(googletag.pubads());
+        googletag.enableServices();
+      });
+    </script>
 	</head>
 	<body class="homepage is-preload">
 		<div id="page-wrapper">
@@ -329,6 +339,15 @@
 			  const app = initializeApp(firebaseConfig);
 			  const analytics = getAnalytics(app);
 			</script>
+		
+		
+		<div id="banner-ad" style="width: 300px; height: 250px;">
+      <script>
+        googletag.cmd.push(function() {
+          googletag.display('banner-ad');
+        });
+      </script>
+    </div>
 
 	</body>
 </html>
